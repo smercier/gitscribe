@@ -3878,25 +3878,6 @@ MAP
     LAYER
         MAXSCALEDENOM 65536
         MINSCALEDENOM 32768
-        NAME 'ocean14'
-        TYPE POLYGON
-        GROUP 'default'
-        STATUS ON
-        PROJECTION
-            'init=epsg:4326'
-        END
-        PROCESSING 'LABEL_NO_CLIP=ON'
-        PROCESSING 'CLOSE_CONNECTION=DEFER'
-        DATA '10m_physical/ne_10m_ocean'
-        CLASS
-            STYLE
-                COLOR '#C6E2F2'
-            END
-        END
-    END
-    LAYER
-        MAXSCALEDENOM 65536
-        MINSCALEDENOM 32768
         NAME 'land14'
         TYPE POLYGON
         GROUP 'default'
@@ -4271,25 +4252,6 @@ MAP
     END
 
 #---- LEVEL 15 ----#
-    LAYER
-        MAXSCALEDENOM 32768
-        MINSCALEDENOM 16384
-        NAME 'ocean15'
-        TYPE POLYGON
-        GROUP 'default'
-        STATUS ON
-        PROJECTION
-            'init=epsg:4326'
-        END
-        PROCESSING 'LABEL_NO_CLIP=ON'
-        PROCESSING 'CLOSE_CONNECTION=DEFER'
-        DATA '10m_physical/ne_10m_ocean'
-        CLASS
-            STYLE
-                COLOR '#C6E2F2'
-            END
-        END
-    END
     LAYER
         MAXSCALEDENOM 32768
         MINSCALEDENOM 16384
