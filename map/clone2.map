@@ -4670,6 +4670,25 @@ MAP
     LAYER
         MAXSCALEDENOM 16384
         MINSCALEDENOM 8192
+        NAME 'ocean16'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        PROCESSING 'CLOSE_CONNECTION=DEFER'
+        DATA '10m_physical/ne_10m_ocean'
+        CLASS
+            STYLE
+                COLOR '#C6E2F2'
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 16384
+        MINSCALEDENOM 8192
         NAME 'land16'
         TYPE POLYGON
         GROUP 'default'
