@@ -7,7 +7,7 @@
 
 LAYERS {
 LAYER {
-    1-16 {
+    1-13 {
         NAME: 'ocean'
         TYPE: POLYGON
         @layerconfig
