@@ -8,8 +8,8 @@ MAP {
     SIZE: 800 800
     UNITS: meters
     EXTENT: -20000000 -20000000 20000000 20000000
-    IMAGECOLOR: '#C6E2F2'
-    SHAPEPATH: '../pdata/naturalEarth/'
+    IMAGECOLOR: '#FFFFFF'
+    ##SHAPEPATH: '../pdata/naturalEarth/'
     WEB {
         METADATA {{
             "ows_enable_request" "*"
