@@ -1,8 +1,8 @@
 ## Map Scribe project
 
-This projet is a template mapping project
+This projet is a template mapping project. Clone it in Scribe
 
-	*
+	* https://github.com/smercier/gitscribe
     
 ## Roadmap of this map
 

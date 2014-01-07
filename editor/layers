@@ -7,7 +7,7 @@ LAYER {
         @layerconfig
         CONNECTIONTYPE: OGR
         CONNECTION{ 1-4: '../geojson/ne_110m_land.geojson'
-                    5-15: '../geojson/ne_110m_land.geojson'
+                    5-15: '../geojson/ne_50m_land.geojson'
                   }
         CLASS {
             STYLE {

@@ -1,0 +1,57 @@
+{"SCALES":[
+  {"1":"268435456"},
+  {"2":"134217728"},
+  {"3":"67108864"},
+  {"4":"33554432"},
+  {"5":"16777216"},
+  {"6":"8388608"},
+  {"7":"4194304"},
+  {"8":"2097152"},
+  {"9":"1048576"},
+  {"10":"524288"},
+  {"11":"262144"},
+  {"12":"131072"},
+  {"13":"65536"},
+  {"14":"32768"},
+  {"15":"16384"},
+  {"16":"8192"}],"VARIABLES":[
+   {"connection":[
+       {"CONNECTION":"\"host=localhost dbname=ne user=ne password=ne port=5432\""},
+       {"CONNECTIONTYPE":"POSTGIS"}]},{"layerconfig":[
+       {"GROUP":"'default'"},
+       {"STATUS":"ON"},
+       {"PROJECTION":[{"VOID":"'init=epsg:4326'"}]},{"PROCESSING":"'LABEL_NO_CLIP=ON'"},
+       {"PROCESSING":"'CLOSE_CONNECTION=DEFER'"}]},{"watercolor":"'#C6E2F2'"},
+   {"watercolor_ol":"'#469FC3'"},
+   {"watercolor_lbl":"'#80C0FF'"},
+   {"rivercolor":"'#6CAAC3'"}],"MAP":[
+   {"CONFIG":"'ON_MISSING_DATA' 'IGNORE'"},
+   {"CONFIG":"\"MS_ERRORFILE\" \"../debugFile.log\""},
+   {"CONFIG":"'PROJ_LIB' '../'"},
+   {"FONTSET":"'../fonts.lst'"},
+   {"IMAGETYPE":"png"},
+   {"MAXSIZE":"4000"},
+   {"SIZE":"800 800"},
+   {"UNITS":"meters"},
+   {"EXTENT":"-18575411.690662 -8078923.3976224 15563222.327004 18578567.520471"},
+   {"IMAGECOLOR":"'#FFFFFF'"},
+   {"WEB":[
+       {"METADATA":[{"VOID":"\"ows_enable_request\" \"*\""},{"VOID":"            \"wms_srs\" \"EPSG:900913 EPSG:4326\""},{"VOID":"            \"labelcache_map_edge_buffer\" \"-10\""},{"VOID":"            \"wms_title\" \"Scribe map - Natural Earth World\""}]},{"IMAGEPATH":"'/tmp/ms_tmp/'"},
+       {"IMAGEURL":"'/ms_tmp/'"}]},{"DEBUG":"5"},
+   {"PROJECTION":[{"VOID":"\"init=epsg:900913\""}]},{"INCLUDE":"'../symbols.map'"}],"LAYERS":[{"LAYER":[
+   {"1-15":[
+       {"NAME":"'land'"},
+       {"TYPE":"POLYGON"},
+       {"VARIABLE":"layerconfig"},
+       {"CONNECTIONTYPE":"OGR"},
+       {"CONNECTION":[{"1-4":"'../geojson/ne_110m_land.geojson'"},
+                   {"5-15":"'../geojson/ne_50m_land.geojson'"}]},{"CLASS":[
+           {"STYLE":[
+               {"4-15":[{"COLOR":"'#EEECDF'"}]},{"OUTLINECOLOR":"'#66A3D2'"},
+               {"WIDTH":"0.5"}]}
+        ]}
+    ]}
+]}
+
+
+]}
