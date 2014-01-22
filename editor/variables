@@ -2,6 +2,7 @@ VARIABLES {
     connection {
         CONNECTION: "host=localhost dbname=ne user=ne password=ne port=5432"
         CONNECTIONTYPE: POSTGIS
+        PROCESSING: 'CLOSE_CONNECTION=DEFER'
     }
     layerconfig {
         GROUP: 'default'
@@ -10,7 +11,10 @@ VARIABLES {
             'init=epsg:4326'
         }}
         PROCESSING: 'LABEL_NO_CLIP=ON'
-        PROCESSING: 'CLOSE_CONNECTION=DEFER'
+        METADATA {{
+              "wms_include_items" "all" 
+          }}
+        TEMPLATE: 'blank.html'
     }
     watercolor: '#C6E2F2'
     watercolor_ol: '#469FC3'

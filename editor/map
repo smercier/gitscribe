@@ -15,6 +15,7 @@ MAP {
             "wms_srs" "EPSG:900913 EPSG:4326"
             "labelcache_map_edge_buffer" "-10"
             "wms_title" "Scribe map - Natural Earth World"
+            "wms_include_items"   "all" 
         }}
         IMAGEPATH: '/tmp/ms_tmp/'
         IMAGEURL: '/ms_tmp/'
