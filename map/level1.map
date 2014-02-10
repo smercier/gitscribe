@@ -1,0 +1,24 @@
+    LAYER
+        MAXSCALEDENOM 999999999
+        MINSCALEDENOM 268435456
+        NAME 'land1'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_110m_land.geojson'
+        CLASS
+            STYLE
+                OUTLINECOLOR '#66A3D2'
+                WIDTH 0.5
+            END
+        END
+    END
