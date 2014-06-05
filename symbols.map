@@ -4,4 +4,9 @@ SYMBOL
     points 1 1 end
     filled true
 END
+SYMBOL
+  NAME "bg-dot"
+  TYPE pixmap
+  IMAGE "../symbols/subtle_dots.png"
+END
 

@@ -42,11 +42,34 @@ MAP
         END
         TEMPLATE 'blank.html'
         CONNECTIONTYPE OGR
-        CONNECTION '../geojson/ne_110m_land.geojson'
+        CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 999999999
+        MINSCALEDENOM 268435456
+        NAME 'land1'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -68,11 +91,34 @@ MAP
         END
         TEMPLATE 'blank.html'
         CONNECTIONTYPE OGR
-        CONNECTION '../geojson/ne_110m_land.geojson'
+        CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 268435456
+        MINSCALEDENOM 134217728
+        NAME 'land2'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -94,11 +140,34 @@ MAP
         END
         TEMPLATE 'blank.html'
         CONNECTIONTYPE OGR
-        CONNECTION '../geojson/ne_110m_land.geojson'
+        CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 134217728
+        MINSCALEDENOM 67108864
+        NAME 'land3'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -120,12 +189,34 @@ MAP
         END
         TEMPLATE 'blank.html'
         CONNECTIONTYPE OGR
-        CONNECTION '../geojson/ne_110m_land.geojson'
+        CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 67108864
+        MINSCALEDENOM 33554432
+        NAME 'land4'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -150,9 +241,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 33554432
+        MINSCALEDENOM 16777216
+        NAME 'land5'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -177,9 +290,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 16777216
+        MINSCALEDENOM 8388608
+        NAME 'land6'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -204,9 +339,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 8388608
+        MINSCALEDENOM 4194304
+        NAME 'land7'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -231,9 +388,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 4194304
+        MINSCALEDENOM 2097152
+        NAME 'land8'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -258,9 +437,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 2097152
+        MINSCALEDENOM 1048576
+        NAME 'land9'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -285,9 +486,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 1048576
+        MINSCALEDENOM 524288
+        NAME 'land10'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -312,9 +535,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 524288
+        MINSCALEDENOM 262144
+        NAME 'land11'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -339,9 +584,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 262144
+        MINSCALEDENOM 131072
+        NAME 'land12'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -366,9 +633,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 131072
+        MINSCALEDENOM 65536
+        NAME 'land13'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -393,9 +682,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 65536
+        MINSCALEDENOM 32768
+        NAME 'land14'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
@@ -420,9 +731,31 @@ MAP
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 32768
+        MINSCALEDENOM 16384
+        NAME 'land15'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END

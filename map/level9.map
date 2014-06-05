@@ -17,9 +17,31 @@
         CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
-                COLOR '#EEECDF'
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 2097152
+        MINSCALEDENOM 1048576
+        NAME 'land9'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END

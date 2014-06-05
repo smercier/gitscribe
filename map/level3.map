@@ -14,11 +14,34 @@
         END
         TEMPLATE 'blank.html'
         CONNECTIONTYPE OGR
-        CONNECTION '../geojson/ne_110m_land.geojson'
+        CONNECTION '../geojson/ne_50m_land.geojson'
         CLASS
             STYLE
                 OUTLINECOLOR '#66A3D2'
                 WIDTH 0.5
+            END
+        END
+    END
+    LAYER
+        MAXSCALEDENOM 134217728
+        MINSCALEDENOM 67108864
+        NAME 'land3'
+        TYPE POLYGON
+        GROUP 'default'
+        STATUS ON
+        PROJECTION
+            'init=epsg:4326'
+        END
+        PROCESSING 'LABEL_NO_CLIP=ON'
+        METADATA
+            "wms_include_items" "all"
+        END
+        TEMPLATE 'blank.html'
+        CONNECTIONTYPE OGR
+        CONNECTION '../geojson/ne_50m_land.geojson'
+        CLASS
+            STYLE
+                SYMBOL 'bg-dot'
             END
         END
     END
